@@ -1,8 +1,9 @@
-     100 files     200 files     300 files     400 files     457 text files.
-classified 457 filesDuplicate file check 457 files (287 known unique)Unique:      100 files                                          Unique:      200 files                                               304 unique files.                              
-Counting:  100Counting:  200Counting:  300     298 files ignored.
+$ cloc src/
+     457 text files.
+     304 unique files.                                          
+     298 files ignored.
 
-github.com/AlDanial/cloc v 1.90  T=0.15 s (1111.3 files/s, 652655.7 lines/s)
+github.com/AlDanial/cloc v 1.90  T=0.14 s (1148.1 files/s, 674285.7 lines/s)
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
