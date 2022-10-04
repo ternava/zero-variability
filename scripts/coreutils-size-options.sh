@@ -47,5 +47,5 @@ do
                           # --help and --version
         f=2
     fi
-    printf "%s %s %s\n" "$p" "$s" "$f"
+    printf "%s %s %s\n" "$p" "$f" "$s"
 done
