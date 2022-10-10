@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# set -x
+
 if [ ! -d "coreutils-9.1/" ] ; then
     echo "coreutils-9.1 source does not exist"
     echo "Downloading coreutils-9.1..."
@@ -9,15 +11,15 @@ if [ ! -d "coreutils-9.1/" ] ; then
 fi
 echo "coreutils-9.1 does exist, entering directory..."
 cd coreutils-9.1
-pgs=$(head -n 18 README | tail -n 9 | tr ' ' '\n' | grep -v install | sort | uniq)
+pgs=$(head -n 18 README | tail -n 9 | tr ' ' '\n' | sort | uniq | sed 's/install/ginstall/g')
 npgs=$(echo $pgs | tr ' ' '\n' | wc -l)
-echo "There are $npgs programs (without 'install')."
+echo "There are $npgs programs."
 
 if [ -f lib/config.h ] ; then
     echo "Already configured."
 else
     echo "Configure..."
-    ./configure --enable-install-program=arch,coreutils,hostname >> /dev/null
+    ./configure --enable-install-program=arch,coreutils,hostname,ginstall >> /dev/null
 fi
 
 if [ -f src/yes ] ; then
@@ -28,24 +30,25 @@ else
 fi
 
 # Quick check
-# for p in $pgs
-# do
-#     if [ -f src/$p ]; then
-#         echo "$p OK"
-#     else
-#         echo "$p KO"
-#     fi
-# done
-
-echo "program options size"
-
 for p in $pgs
 do
-    s=$(du -b src/$p | cut -f1)
-    f=$(./src/$p --help | grep -E "^((  )|(      ))(-|\+)((-?)([A-Za-z1-9]))" | wc -l)
-    if [ $f -eq 0 ]; then # If 0 options (e.g., "test"), consider at least
-                          # --help and --version
-        f=2
+    f=$(grep -Rl "PROGRAM_NAME \"$p\"" src)
+    if [ -f $src ]; then
+        echo "$p: $f"
+    else
+        echo "$p: NULL"
     fi
-    printf "%s %s %s\n" "$p" "$f" "$s"
 done
+
+# echo "program options size"
+
+# for p in $pgs
+# do
+#     s=$(du -b src/$p | cut -f1)
+#     f=$(./src/$p --help | grep -E "^((  )|(      ))(-|\+)((-?)([A-Za-z1-9]))" | wc -l)
+#     if [ $f -eq 0 ]; then # If 0 options (e.g., "test"), consider at least
+#                           # --help and --version
+#         f=2
+#     fi
+#     printf "%s %s %s\n" "$p" "$f" "$s"
+# done
