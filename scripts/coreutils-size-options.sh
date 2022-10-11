@@ -19,7 +19,7 @@ if [ -f lib/config.h ] ; then
     echo "Already configured."
 else
     echo "Configure..."
-    ./configure --enable-install-program=arch,coreutils,hostname,ginstall >> /dev/null
+    ./configure --enable-install-program=arch,hostname >> /dev/null
 fi
 
 if [ -f src/yes ] ; then
