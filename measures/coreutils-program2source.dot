@@ -13,6 +13,7 @@ digraph G {
 "chmod" -> "chmod.c";
 "chown" -> "chown.c";
 "chroot" -> "chroot.c";
+"cksum" -> "cksum.c";
 "cksum" -> "digest.c";
 "comm" -> "comm.c";
 "cp" -> "cp.c";
@@ -31,6 +32,7 @@ digraph G {
 "expand" -> "expand.c";
 "expr" -> "expr.c";
 "factor" -> "factor.c";
+"false" -> "false.c";
 "false" -> "true.c";
 "fmt" -> "fmt.c";
 "fold" -> "fold.c";
@@ -87,6 +89,7 @@ digraph G {
 "stat" -> "stat.c";
 "stdbuf" -> "stdbuf.c";
 "stty" -> "stty.c";
+"sum" -> "sum.c";
 "sum" -> "digest.c";
 "sync" -> "sync.c";
 "tac" -> "tac.c";
