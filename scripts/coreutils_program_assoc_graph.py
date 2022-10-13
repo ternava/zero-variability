@@ -62,7 +62,9 @@ def main():
     for program in COREUTILS:
         p2fd[program] = []
         p2fd[program].extend(
-            filter(lambda x: x.endswith(f"-{program}.c"), src_files))
+            filter(lambda x: x.endswith(f"-{program}.c")
+                   or x == program + ".c",
+                   src_files))
         for f in src_files:
             if program in get_alternative_names(f):
                 if f not in p2fd[program]:
