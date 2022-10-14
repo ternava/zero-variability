@@ -14,7 +14,6 @@ chown,15,383624
 chroot,5,248256
 cksum,14,769160
 comm,10,230552
-coreutils,2,192512
 cp,33,675152
 csplit,9,285136
 cut,12,243840
@@ -38,6 +37,7 @@ head,7,261656
 hostid,2,194336
 hostname,2,197184
 id,10,247040
+ginstall,21,740352
 join,15,290048
 kill,5,211008
 link,2,194640
