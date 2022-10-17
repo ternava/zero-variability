@@ -4,6 +4,7 @@
 
 git clone git@github.com:landley/toybox.git > /dev/null 2>&1
 cd toybox
+git checkout 0.8.8 > /dev/null 2>&1
 
 # without "coreutils"
 coreutilstools="[ arch b2sum base32 base64 basename basenc cat chcon chgrp chmod chown

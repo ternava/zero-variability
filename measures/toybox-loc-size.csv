@@ -12,7 +12,7 @@ chgrp 53 26800
 chmod 27 22704
 chown - 26800
 chroot 11 18544
-cksum 44 18576
+cksum 52 18576
 comm 47 18544
 cp 317 31200
 csplit - -
@@ -48,14 +48,14 @@ md5sum 362 26808
 mkdir 18 18544
 mkfifo 18 18512
 mknod 23 18544
-mktemp 46 22704
+mktemp 50 26800
 mv - 31232
 nice 15 18544
 nl 39 22704
-nohup 19 18576
+nohup 23 18576
 nproc - 18576
 numfmt - -
-od 203 22704
+od 205 22704
 paste 79 22672
 pathchk - -
 pinky - -
@@ -78,7 +78,7 @@ sha512sum - 26808
 shred 51 22704
 shuf - -
 sleep 7 18512
-sort 227 26800
+sort 226 26800
 split 63 22672
 stat 138 27248
 stdbuf - -
@@ -88,8 +88,8 @@ sync 5 14352
 tac 21 14416
 tail 209 26800
 tee 33 18576
-test 105 18576
-timeout 68 26976
+test 104 18576
+timeout 61 26976
 touch 43 26800
 tr 217 22720
 true 5 14384
