@@ -1,20 +1,20 @@
 $ cloc toybox
-     555 text files.
-     538 unique files.                                          
-     120 files ignored.
+     553 text files.
+     536 unique files.
+     119 files ignored.
 
-github.com/AlDanial/cloc v 1.90  T=0.16 s (2742.7 files/s, 638388.8 lines/s)
+github.com/AlDanial/cloc v 1.90  T=0.16 s (2713.7 files/s, 632013.3 lines/s)
 --------------------------------------------------------------------------------
 Language                      files          blank        comment           code
 --------------------------------------------------------------------------------
-C                               278          12298          12241          56437
+C                               278          12288          12231          56340
 HTML                             15           1520             30           8301
-Bourne Again Shell              115           1250            831           4947
-C/C++ Header                     10            247            222           1300
-Bourne Shell                     15            277            259           1215
+Bourne Again Shell              115           1241            824           4922
+C/C++ Header                     10            246            222           1297
+Bourne Shell                     14            275            260           1206
 make                              2             44             12            111
 Python                            1             32             15             92
 YAML                              1              5              0             31
 --------------------------------------------------------------------------------
-SUM:                            437          15673          13610          72434
+SUM:                            436          15651          13594          72300
 --------------------------------------------------------------------------------
