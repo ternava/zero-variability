@@ -10,7 +10,6 @@ This repository accompanies our paper on **small-scale** and **null-variable** s
 
 - **`scripts/`**: Contains all scripts used in the study. 
 - **`figures/`**: Includes figures and supplementary images from the paper.  
-- **`hello-world/`**: Features a collection of "Hello, World!" programs used in our pre-analysis.  
 - **`measures/`**: Contains raw data and measurements collected during the study.
 
 ### Focus on the `true` program
