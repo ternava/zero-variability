@@ -1,18 +1,19 @@
-# An Attempt to Define Null Variability
+# Small Yet Configurable: Unveiling Null Variability in Software 
 
-Submitted to VaMoS 2023 (#17).
+Submitted to SPLC 2025 (#48).  
 
-### Summary
+## Summary  
 
-In this paper, we try to define the concept of **null-variability**, i.e. if, when and how variability can be removed or resolved from software systems. 
+This repository accompanies our paper on **small-scale** and **null-variable** software.
 
+## Repository Structure  
 
-### Organisation
+- **`scripts/`**: Contains all scripts used in the study. 
+- **`figures/`**: Includes figures and supplementary images from the paper.  
+- **`hello-world/`**: Features a collection of "Hello, World!" programs used in our pre-analysis.  
+- **`measures/`**: Contains raw data and measurements collected during the study.
 
-Code is available in the **scripts** directory, figures and supplementary images in the **figures** directory, a set of hello world programs in the hello wolrd directory and the raw data in the **measures** directory
-
-
-### Focus on the true functionality
+### Focus on the `true` program
 
 - The built-in `true.c`: https://github.com/coreutils/coreutils/blob/master/src/true.c
 - The evolution of the built-in `true.c` : https://github.com/coreutils/coreutils/commits/master/src/true.c
