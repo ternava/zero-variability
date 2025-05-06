@@ -1,4 +1,4 @@
-# Small Yet Configurable: Unveiling Null Variability in Software 
+## Small Yet Configurable: Unveiling Null Variability in Software 
 
 Submitted to SPLC 2025 (#48).  
 
