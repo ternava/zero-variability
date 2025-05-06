@@ -56,3 +56,8 @@ dkms.conf
 hello-programs/0-helloworld
 hello-programs/1-helloworld
 *~
+
+# Downloaded projects
+scripts/linux/
+scripts/tree-sitter-c/
+scripts/coreutils/
