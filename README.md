@@ -8,7 +8,8 @@ This repository accompanies our paper on **small-scale** and **null-variable** s
 
 ## Repository Structure  
 
-- **`scripts/`**: Contains all scripts used in the study. 
+- **`scripts/`**: Contains all scripts used in the study.
+- **`scripts/replicate-notebook.ipynb`**: Is the notebook for replicating the experiments
 - **`figures/`**: Includes figures and supplementary images from the paper.  
 - **`measures/`**: Contains raw data and measurements collected during the study.
 
@@ -16,6 +17,6 @@ This repository accompanies our paper on **small-scale** and **null-variable** s
 
 - The built-in `true.c`: https://github.com/coreutils/coreutils/blob/master/src/true.c
 - The evolution of the built-in `true.c` : https://github.com/coreutils/coreutils/commits/master/src/true.c
-- The `true.c` in toys: https://raw.githubusercontent.com/landley/toybox/master/toys/posix/true.c
+- The `true.c` in ToyBox: https://raw.githubusercontent.com/landley/toybox/master/toys/posix/true.c
 
 
