@@ -58,7 +58,7 @@ hello-programs/1-helloworld
 *~
 
 # Downloaded projects
-#scripts/linux/
-#scripts/tree-sitter-c/
-#scripts/coreutils/
+scripts/linux/
+scripts/tree-sitter-c/
+scripts/coreutils/
 scripts/coreutils-9.1/
